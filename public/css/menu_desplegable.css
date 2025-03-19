@@ -1,0 +1,126 @@
+/*Menu Desplegable*/
+
+.menu_desplegable {
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu_desplegable__container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Data */
+
+.menu_desplegable__data {
+    width: 80%;
+    height: 100vh;
+    background-color: #e2e2e2;
+
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid #292929;
+}
+
+/*Logo*/
+
+.menu_desplegable__data__logo {
+    padding: 4px 4px 10px 4px;
+    background-color: #e2e2e2;
+}
+
+.menu_desplegable__data__logo__img {
+    width: 75px;
+    height: 75px;
+    background-color: #e2e2e2;
+}
+
+/*Perfil*/
+
+.menu_desplegable__data__infoPerfil {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+
+    align-items: center;
+    margin: 4px 2px 4px 8px;
+    overflow: hidden;
+}
+
+
+#menu_desplegable__data__infoPerfil__foto__IMG {
+    width: 60px;
+    height: 60px;
+    background-color: #ff0040;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu_desplegable__data__infoPerfil__foto__IMG > p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.menu_desplegable__data__infoPerfil__name p {
+    font-size: 1.2rem;
+}
+
+/*Lista*/
+
+.menu_desplegable__data__navegacion__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+}
+
+.menu_desplegable__data__navegacion__list--item {
+    background-color: rgb(241, 241, 241);
+    border-radius: 32px;
+    width: 100%;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 4px 4px 4px 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.menu_desplegable__data__navegacion__list--item div {
+    width: 24px;
+    height: 24px;
+}
+
+/*Footer*/
+.menu_desplegable__data__footer {
+    margin-top: auto;
+}
+
+.menu_desplegable__data__footer__container {
+    padding: 8px 2px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+}
+
+/* Cerrar */
+
+.menu_desplegable__cerrar {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(1px);
+}
